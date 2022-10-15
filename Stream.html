@@ -14,87 +14,134 @@
 </head>
 
 <body>
-    <section>
-        <header class="heading">
-            <nav class="navi">
-                <h1 class="logo"><a href="#">STREAMER</a></h1>
-                <ul class="navItems">
-                    <li><a href="" class="home">Home</a></li>
-                    <li><a href="" class="movie">Movies</a></li>
-                    <li><a href="" class="tvShow">TV Shows</a></li>
-                    <li><a href="" class="popular">New & Popular</a></li>
-                    <li><a href="" class="lang">Languages</a></li>
-                    <li><a href="" class="about">About</a></li>
-                </ul>
-            </nav>
-            <div class="searchLog">
-                <div class="searchIcon">
-                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="2em"
-                        width="2em" xmlns="http://www.w3.org/2000/svg">
+    <header class="heading">
+        <nav class="navi">
+            <h1 class="logo"><a href="#"><span class="color">TELE</span>SEE</a></h1>
+            <ul class="navItems">
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#movies" class="movie">Movies</a></li>
+                <li><a href="" class="tvShow">TV Shows</a></li>
+                <li><a href="" class="popular">New & Popular</a></li>
+                <li><a href="" class="lang">Languages</a></li>
+                <li><a href="" class="about">About</a></li>
+            </ul>
+        </nav>
+        <div class="searchLog">
+            <div class="searchIcon">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="2em"
+                    width="2em" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z">
+                    </path>
+                </svg>
+            </div>
+            <form action="" method="">
+                <div class="searchBox">
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.55vw"
+                        width="1.55vw" xmlns="http://www.w3.org/2000/svg" class="svgIcon">
                         <path
                             d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z">
                         </path>
                     </svg>
+                    <input type="search" class="searchInput" placeholder="Title,People,Genre...">
                 </div>
-                <form action="" method="">
-                    <div class="searchBox">
-                        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1.5em"
-                            width="1.5em" xmlns="http://www.w3.org/2000/svg" class="svgIcon">
-                            <path
-                                d="M10,18c1.846,0,3.543-0.635,4.897-1.688l4.396,4.396l1.414-1.414l-4.396-4.396C17.365,13.543,18,11.846,18,10 c0-4.411-3.589-8-8-8s-8,3.589-8,8S5.589,18,10,18z M10,4c3.309,0,6,2.691,6,6s-2.691,6-6,6s-6-2.691-6-6S6.691,4,10,4z">
-                            </path>
-                        </svg>
-                        <input type="search" class="searchInput" placeholder="Title,People,Genre...">
-                    </div>
-                </form>
-                <div class="profileIcon">
-                    <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em"
-                        width="2em" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
-                            fill="currentColor"></path>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
-                            fill="currentColor"></path>
-                    </svg>
-                    <img src="/down.png" class="arrowIcon">
-                </div>
-        </header>
-        <aside class="aside">
-            <div class="profileContent">
-                <ul class="profileList">
-                    <li><a href="">My Profile</a></li>
-                    <li><a href="">Edit Profile</a></li>
-                    <li><a href="">My Subscription</a></li>
-                    <li><a href="">My Downloads</a></li>
-                    <li><a href="">Sign Out</a></li>
-                </ul>
+            </form>
+            <div class="profileIcon">
+                <svg stroke="currentColor" fill="none" stroke-width="0" viewBox="0 0 24 24" height="2em" width="2em"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16 9C16 11.2091 14.2091 13 12 13C9.79086 13 8 11.2091 8 9C8 6.79086 9.79086 5 12 5C14.2091 5 16 6.79086 16 9ZM14 9C14 10.1046 13.1046 11 12 11C10.8954 11 10 10.1046 10 9C10 7.89543 10.8954 7 12 7C13.1046 7 14 7.89543 14 9Z"
+                        fill="currentColor"></path>
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 1C5.92487 1 1 5.92487 1 12C1 18.0751 5.92487 23 12 23C18.0751 23 23 18.0751 23 12C23 5.92487 18.0751 1 12 1ZM3 12C3 14.0902 3.71255 16.014 4.90798 17.5417C6.55245 15.3889 9.14627 14 12.0645 14C14.9448 14 17.5092 15.3531 19.1565 17.4583C20.313 15.9443 21 14.0524 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12ZM12 21C9.84977 21 7.87565 20.2459 6.32767 18.9878C7.59352 17.1812 9.69106 16 12.0645 16C14.4084 16 16.4833 17.1521 17.7538 18.9209C16.1939 20.2191 14.1881 21 12 21Z"
+                        fill="currentColor"></path>
+                </svg>
+                <img src="/images/down.png" class="arrowIcon">
             </div>
-        </aside>
-        <main>
+    </header>
+    <aside class="aside">
+        <div class="profileContent">
+            <ul class="profileList">
+                <li><a href="">My Profile</a></li>
+                <li><a href="">Edit Profile</a></li>
+                <li><a href="">My Subscription</a></li>
+                <li><a href="">My Downloads</a></li>
+                <li><a href="">Sign Out</a></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <section>
             <div class="mainStartVideo">
-                <img src="/kantara.webp" class="kantara">
+                <img src="/images/kantara.webp" class="kantara">
                 <div class="playMovie">
                     <h2 class="movieTitle">KANTARA</h2>
-                    <p class="movieDescription">It involves culture of Kambla and Bhootha Kola. A human and nature conflict where Shiva is the rebellion who works against nature. A loop leads to war between villagers and evil forces. Will he able to replace peace in the village?</p>
+                    <p class="movieDescription">It involves culture of Kambla and Bhootha Kola. A human and nature
+                        conflict
+                        where Shiva is the rebellion who works against nature. A loop leads to war between villagers and
+                        evil forces. Will he able to replace peace in the village?</p>
                     <button type="button" class="playBtn">
                         <div class="flexBox">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z"></path></svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm144.1 454.9L437.7 677.8a8.02 8.02 0 0 1-12.7-6.5V353.7a8 8 0 0 1 12.7-6.5L656.1 506a7.9 7.9 0 0 1 0 12.9z">
+                                </path>
+                            </svg>
                             <span>Play</span>
-                            <svg class="directionArrow" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd"></path></svg>
+                            <svg class="directionArrow" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </button>
                     <button type="button" class="infoBtn">
                         <div class="flexBox">
-                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z"></path></svg>
+                            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                                height="2em" width="2em" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm32 664c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8V456c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v272zm-32-344a48.01 48.01 0 0 1 0-96 48.01 48.01 0 0 1 0 96z">
+                                </path>
+                            </svg>
                             <span>Info</span>
-                            <svg class="directionArrow" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1.5em" width="1.5em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z" clip-rule="evenodd"></path></svg>
+                            <svg class="directionArrow" stroke="currentColor" fill="currentColor" stroke-width="0"
+                                viewBox="0 0 16 16" height="1.55vw" width="1.55vw" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M10.146 4.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 01-.708-.708L12.793 8l-2.647-2.646a.5.5 0 010-.708z"
+                                    clip-rule="evenodd"></path>
+                                <path fill-rule="evenodd" d="M2 8a.5.5 0 01.5-.5H13a.5.5 0 010 1H2.5A.5.5 0 012 8z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
                         </div>
                     </button>
                 </div>
             </div>
-        </main>
-    </section>
+        </section>
+        <section>
+            <div class="moviesSlider" id="movies">
+                <h3>Movies</h3>
+                <div class="moviesCollection">
+                    <div class="moviesReel"></div>
+                        <img src="/images/inception.webp">
+                        <img src="/images/don.webp">
+                        <img src="/images/inter.webp">
+                        <img src="/images/charlie.jpg">
+                        <img src="/images/3idiots.webp">
+                        <img src="/images/taare.webp">
+                        <img src="/images/major.webp">
+                        <img src="/images/doctor.webp">
+                        <img src="/images/article15.webp">
+                        <img src="/images/rrr.webp">
+                    </div>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg" class="rightArrowSlider"><path d="M294.1 256L167 129c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.3 34 0L345 239c9.1 9.1 9.3 23.7.7 33.1L201.1 417c-4.7 4.7-10.9 7-17 7s-12.3-2.3-17-7c-9.4-9.4-9.4-24.6 0-33.9l127-127.1z"></path></svg>
+                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="2em" width="2em" xmlns="http://www.w3.org/2000/svg" class="leftArrowSlider"><path d="M217.9 256L345 129c9.4-9.4 9.4-24.6 0-33.9-9.4-9.4-24.6-9.3-34 0L167 239c-9.1 9.1-9.3 23.7-.7 33.1L310.9 417c4.7 4.7 10.9 7 17 7s12.3-2.3 17-7c9.4-9.4 9.4-24.6 0-33.9L217.9 256z"></path></svg>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
-
 </html>

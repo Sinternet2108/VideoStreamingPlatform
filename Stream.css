@@ -6,6 +6,23 @@
     overflow-x: hidden;
     color: rgb(255, 255, 255);
     font-family: "Nunito",sans-serif;
+    font-size: 1.1vw;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance:none;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.color
+{
+    font-size: 2.15vw;
 }
 
 .heading
@@ -15,20 +32,24 @@
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0,0.975);
+    z-index: 2;
 }
 
 .navi
 {
     display: flex;
     align-items: center;
-    height: 5rem;
+    /* height: 5rem; */
+    height: 5.25vw;
 }
 
 .logo a
 {
-    font-size: 2rem;
-    padding: 0 2rem;
+    /* font-size: 2rem; */
+    font-size: 2.15vw;
+    /* padding: 0 2rem; */
+    padding: 0 2.15vw;
     color: #FEE715FF;
     text-decoration: none;
 }
@@ -41,7 +62,8 @@
 }
 
 .navItems li{
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+    padding: 0 1.1vw;
 }
 
 .navItems li a
@@ -56,20 +78,24 @@
 
 .searchIcon
 {
-    padding: 0.45rem 1rem 0 0;
+    /* padding: 0.45rem 1rem 0 0; */
+    padding: 0.45vw 1.1vw 0 0;
 }
 
 .arrowIcon
 {
-    width: 16px;
+    /* width: 16px; */
+    width: 1.1vw;
     height: auto;
-    padding: 0 0 0 0.2rem;
+    /* padding: 0 0 0 0.2rem; */
+    padding: 0 0 0 0.2vw;
     transition: transform 0.25s ease-in;
 }
 
 .profileIcon
 {
-    padding: 0 2rem 0 0;
+    /* padding: 0 2rem 0 0; */
+    padding: 0 2.15vw 0 0;
 }
 
 .searchIcon svg,.profileIcon svg,.profileIcon img
@@ -87,14 +113,17 @@
 .searchBox
 {
     position: relative;
-    padding:0.2rem 1rem 0 0;
+    /* padding:0.2rem 1rem 0 0; */
+    padding: 0.2vw 1.1vw 0 0;
     display: none;
 }
 
 .searchInput
 {
-    height: 2rem;
-    padding: 0 0 0 2rem;
+    /* height: 2rem; */
+    height: 2.15vw;
+    /* padding: 0 0 0 2rem; */
+    padding: 0 0 0 2.15vw;
     border: none;
     outline: none;
 }
@@ -103,8 +132,10 @@
 {
     position: absolute;
     z-index: 2;
-    top:0.5rem;
-    left:0.25rem;
+    /* top:0.5rem; */
+    top:0.5vw;
+    /* left:0.25rem; */
+    left: 0.3vw;
 }
 
 .searchBox svg path,.searchInput
@@ -116,14 +147,18 @@
 {
     position: absolute;
     width:15%;
-    height:40vh;
+    /* height:40vh; */
+    height: 19vw;
     background-color: rgb(255, 255, 255);
-    border-radius: 1rem;
+    /* border-radius: 16px; */
+    border-radius: 1.1vw;
     display: flex;
     justify-content: center;
     align-items: center;
-    right: 1.5rem;
-    top: 5rem;
+    /* right: 1.5rem; */
+    right: 1.55vw;
+    /* top: 5rem; */
+    top:5.2vw;
     display: none;
     position: fixed;
 }
@@ -135,7 +170,8 @@
 
 .profileContent li
 {
-    padding:1rem 0;
+    /* padding:1rem 0; */
+    padding:1.1vw 0;
 }
 
 .profileContent li a
@@ -161,35 +197,41 @@
     top: 0;
     left: 0;
     width: 100vw;
+    /* height: 120%; */
     z-index: -1;    
 }
 
 .mainStartVideo
 {
-    height: 120vh;
-    width: 100vw;
-    background: rgba(0,0,0,0.5);
+    height: 56.25vw;
+    width: 100%;
+    background: rgba(0,0,0,0.45);
 }
 
 .playMovie
 {
     position: absolute;
-    top:45%;
+    /* top: 45%; */
+    top: 21.75vw;
     left: 5%;
+    height: 56.25vw;
 }
 
 .movieTitle
 {
-    font-size: 5.5rem;
+    font-size: 5.75vw;
+    /* font-size: 5.5rem; */
     font-family: "Nunito",sans-serif;
     font-weight: 700;
 }
 
 .movieDescription
 {
-    font-size: 1.15rem;
+    font-size: 1.2vw;
+    /* font-size: 1.15rem; */
     width: 40%;
-    padding: 0 0 1.75rem 0;
+    /* padding: 0.35rem 0 2rem 0; */
+    padding: 0.4vw 0 2.15vw 0;
 }
 
 .playBtn svg path,.infoBtn svg path,.playMovie button span
@@ -207,22 +249,28 @@
 {
     background-color: rgba(168, 168, 168, 0.5);
     border:none;
-    font-size: 1.15rem;
-    border-radius: 10px;
-    margin-right: 2rem;
+    /* font-size: 1.15rem; */
+    font-size: 1.2vw;
+    /* border-radius: 10px; */
+    border-radius: 1.25vw;
+    /* margin-right: 2rem; */
+    margin-right: 2.15vw;
     cursor: pointer;
     position: relative;
 }
 
 .playMovie button span
 {
-    padding: 0 1rem;
+    /* padding: 0 1rem; */
+    padding: 0 1.1vw;
 }
 
 .flexBox
 {
-    width: 12rem;
-    height: 4rem;
+    /* width: 12rem; */
+    width: 12.5vw;
+    /* height: 4rem; */
+    height: 4.25vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -231,12 +279,65 @@
 
 .flexBox:hover
 {
-    width: 14rem;
+    /* width: 14rem; */
+    width: 14.5vw;
     transition: width 0.4s ease-in-out;
 }
 
 .directionArrow{
     display: none;
     position: absolute;
-    right: 1rem;
+    /* right: 1rem; */
+    right: 1.1vw;
+}
+
+.moviesSlider
+{
+    position: relative;
+}
+
+.moviesSlider h3
+{
+    color:white;
+    font-size: 2.25vw;
+    padding:1vw 0 0 1.5vw;
+}
+
+.moviesCollection{
+    display: flex;
+    width: 200vw;
+    padding: 1vw 1vw 0 1vw;
+    /* transform: translateX(-100vw); */
+    transition: transform 1s ease;
+}
+
+.moviesSlider img{
+    width: 20%;
+    padding: 0 0.5vw;
+    border-radius: 2vw;
+}
+
+.moviesSlider svg
+{
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(0,50%);
+}
+
+.moviesSlider svg path
+{
+    color:black;
+}
+
+.rightArrowSlider
+{
+    display: block;
+    right: 0;
+}
+
+.leftArrowSlider
+{
+    display: none;
+    left: 1vw;
 }
