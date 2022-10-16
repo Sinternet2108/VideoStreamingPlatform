@@ -161,6 +161,7 @@ body{
     top:5.2vw;
     display: none;
     position: fixed;
+    z-index: 3;
 }
 
 .profileContent ul
@@ -306,7 +307,7 @@ body{
 .moviesCollection{
     display: flex;
     width: 200vw;
-    padding: 1vw 1vw 0 1vw;
+    padding: 1vw 1vw 2.5vw 1vw;
     /* transform: translateX(-100vw); */
     transition: transform 1s ease;
 }
@@ -314,7 +315,7 @@ body{
 .moviesSlider img{
     width: 20%;
     padding: 0 0.5vw;
-    border-radius: 2vw;
+    border-radius: 1.5vw;
 }
 
 .moviesSlider svg
@@ -322,7 +323,7 @@ body{
     position: absolute;
     top: 50%;
     cursor: pointer;
-    transform: translate(0,50%);
+    transform: translate(0,15%);
 }
 
 .moviesSlider svg path

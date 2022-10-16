@@ -7,9 +7,9 @@ let buttonElement = document.getElementsByClassName("flexBox");
 let arrowElement = document.querySelectorAll(".directionArrow");
 let mainContentDiv = document.querySelector(".mainStartVideo");
 let kantaraImage = document.querySelector(".kantara");
-let arrowRightSlider = document.querySelector(".moviesSlider svg");
-let movieSlider = document.querySelector(".moviesCollection");
-let arrowLeftSlider = document.querySelector(".leftArrowSlider");
+let movieSlider = document.querySelectorAll(".moviesCollection");
+let arrowRightSlider = document.querySelectorAll(".rightArrowSlider");
+let arrowLeftSlider = document.querySelectorAll(".leftArrowSlider");
 
 searchElement.addEventListener("click",expandSearch);
 
@@ -39,16 +39,19 @@ for(let i=0;i<buttonElement.length;i++)
     })
 }
 
-arrowRightSlider.addEventListener("click",()=>{
-    movieSlider.style.setProperty("transform","translateX(-100vw)");
-    arrowRightSlider.style.setProperty("display","none");
-    arrowLeftSlider.style.setProperty("display","block");
-})
-
-arrowLeftSlider.addEventListener("click",()=>{
-    movieSlider.style.setProperty("transform","translateX(0vw)");
-    arrowLeftSlider.style.setProperty("display","none");
-    arrowRightSlider.style.setProperty("display","block");
-})
+for(let i=0;i<movieSlider.length;i++)
+{
+    arrowRightSlider[i].addEventListener("click",()=>{
+        movieSlider[i].style.setProperty("transform","translateX(-100vw)");
+        arrowRightSlider[i].style.setProperty("display","none");
+        arrowLeftSlider[i].style.setProperty("display","block");
+    })
+    
+    arrowLeftSlider[i].addEventListener("click",()=>{
+        movieSlider[i].style.setProperty("transform","translateX(0vw)");
+        arrowLeftSlider[i].style.setProperty("display","none");
+        arrowRightSlider[i].style.setProperty("display","block");
+    })
+}
 
 
