@@ -1,3 +1,7 @@
+window.onbeforeunload = function() {
+    return "Are You Sure? You will lead to Home Page...";
+}
+
 let searchElement = document.querySelector(".searchIcon svg");
 let searchInputElement = document.querySelector(".searchBox");
 let profileIconElement = document.querySelector(".profileIcon svg");
@@ -10,6 +14,13 @@ let kantaraImage = document.querySelector(".kantara");
 let movieSlider = document.querySelectorAll(".moviesCollection");
 let arrowRightSlider = document.querySelectorAll(".rightArrowSlider");
 let arrowLeftSlider = document.querySelectorAll(".leftArrowSlider");
+let trailerElement = document.querySelector(".playBtnTrailer");
+let videoPlayer = document.querySelector(".VideoPlayer");
+let mainContent = document.querySelector(".mainContent");
+let headerContent = document.querySelector(".heading");
+let backArrowDiv = document.querySelector(".Backarrow");
+let backArrow = document.querySelector(".Backarrow svg");
+let backWritten = document.querySelector(".label");
 
 searchElement.addEventListener("click",expandSearch);
 
@@ -54,4 +65,19 @@ for(let i=0;i<movieSlider.length;i++)
     })
 }
 
+trailerElement.addEventListener("click",()=>{
+    videoPlayer.style.setProperty("display","block");
+    mainContent.style.setProperty("display","none");
+    headerContent.style.setProperty("display","none");
+    backArrowDiv.style.setProperty("display","block");
+});
 
+backArrow.addEventListener("click",backFunction);
+
+function backFunction()
+{
+    videoPlayer.style.setProperty("display","none");
+    mainContent.style.setProperty("display","block");
+    headerContent.style.setProperty("display","flex");
+    backArrowDiv.style.setProperty("display","none");
+}

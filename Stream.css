@@ -17,7 +17,7 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 body{
-    background-color: rgba(0, 0, 0, 1);
+    background-image: linear-gradient(to bottom right,#000000,#1A1A1A);
 }
 
 .color
@@ -341,4 +341,40 @@ body{
 {
     display: none;
     left: 1vw;
+}
+
+.VideoPlayer
+{
+    display: none;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    z-index: 4;
+    position: fixed;
+}
+
+.VideoPlayer video
+{
+    width: 70vw;
+}
+
+.Backarrow
+{
+    display: none;
+    cursor: pointer;
+    padding: 2.15vw;
+}
+
+.Backarrow svg path{
+    color:white;
+}
+
+.Backarrow svg:hover{
+    transform: translate(-5%);
+}
+
+.label
+{
+    font-size: 1.5vw;
 }
