@@ -17,6 +17,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 body {
     background-image: linear-gradient(to bottom right, #000000, #1A1A1A);
+    background-repeat: no-repeat;
 }
 
 .color {
@@ -341,4 +342,9 @@ body {
 
 .label {
     font-size: 1.5vw;
+}
+
+.videoWindow
+{
+    display: none;
 }
