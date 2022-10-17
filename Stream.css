@@ -1,11 +1,10 @@
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     overflow-x: hidden;
     color: rgb(255, 255, 255);
-    font-family: "Nunito",sans-serif;
+    font-family: "Nunito", sans-serif;
     font-size: 1.1vw;
 }
 
@@ -13,39 +12,35 @@ input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
-  -webkit-appearance:none;
+    -webkit-appearance: none;
 }
 
-body{
-    background-image: linear-gradient(to bottom right,#000000,#1A1A1A);
+body {
+    background-image: linear-gradient(to bottom right, #000000, #1A1A1A);
 }
 
-.color
-{
+.color {
     font-size: 2.15vw;
 }
 
-.heading
-{
+.heading {
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    background-color: rgba(0, 0, 0,0.975);
+    background-color: rgba(0, 0, 0, 0.975);
     z-index: 2;
 }
 
-.navi
-{
+.navi {
     display: flex;
     align-items: center;
     /* height: 5rem; */
     height: 5.25vw;
 }
 
-.logo a
-{
+.logo a {
     /* font-size: 2rem; */
     font-size: 2.15vw;
     /* padding: 0 2rem; */
@@ -54,36 +49,32 @@ body{
     text-decoration: none;
 }
 
-.navItems
-{
+.navItems {
     display: flex;
     align-items: center;
     list-style: none;
 }
 
-.navItems li{
+.navItems li {
     /* padding: 0 1rem; */
     padding: 0 1.1vw;
 }
 
-.navItems li a
-{
+.navItems li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-.navItems li a:hover{
-    color:rgb(157, 157, 157);
+.navItems li a:hover {
+    color: rgb(157, 157, 157);
 }
 
-.searchIcon
-{
+.searchIcon {
     /* padding: 0.45rem 1rem 0 0; */
     padding: 0.45vw 1.1vw 0 0;
 }
 
-.arrowIcon
-{
+.arrowIcon {
     /* width: 16px; */
     width: 1.1vw;
     height: auto;
@@ -92,34 +83,32 @@ body{
     transition: transform 0.25s ease-in;
 }
 
-.profileIcon
-{
+.profileIcon {
     /* padding: 0 2rem 0 0; */
     padding: 0 2.15vw 0 0;
 }
 
-.searchIcon svg,.profileIcon svg,.profileIcon img
-{
+.searchIcon svg,
+.profileIcon svg,
+.profileIcon img {
     cursor: pointer;
 }
 
-.searchLog,.profileIcon
-{
+.searchLog,
+.profileIcon {
     display: flex;
     justify-content: space-around;
-    align-items:center;
+    align-items: center;
 }
 
-.searchBox
-{
+.searchBox {
     position: relative;
     /* padding:0.2rem 1rem 0 0; */
     padding: 0.2vw 1.1vw 0 0;
     display: none;
 }
 
-.searchInput
-{
+.searchInput {
     /* height: 2rem; */
     height: 2.15vw;
     /* padding: 0 0 0 2rem; */
@@ -128,25 +117,23 @@ body{
     outline: none;
 }
 
-.svgIcon
-{
+.svgIcon {
     position: absolute;
     z-index: 2;
     /* top:0.5rem; */
-    top:0.5vw;
+    top: 0.5vw;
     /* left:0.25rem; */
     left: 0.3vw;
 }
 
-.searchBox svg path,.searchInput
-{
+.searchBox svg path,
+.searchInput {
     color: black;
 }
 
-.profileContent
-{
+.profileContent {
     position: absolute;
-    width:15%;
+    width: 15%;
     /* height:40vh; */
     height: 19vw;
     background-color: rgb(255, 255, 255);
@@ -158,59 +145,51 @@ body{
     /* right: 1.5rem; */
     right: 1.55vw;
     /* top: 5rem; */
-    top:5.2vw;
+    top: 5.2vw;
     display: none;
     position: fixed;
     z-index: 3;
 }
 
-.profileContent ul
-{
+.profileContent ul {
     list-style: none;
 }
 
-.profileContent li
-{
+.profileContent li {
     /* padding:1rem 0; */
-    padding:1.1vw 0;
+    padding: 1.1vw 0;
 }
 
-.profileContent li a
-{
+.profileContent li a {
     text-decoration: none;
-    color:black;
+    color: black;
 }
 
-.showContent
-{
+.showContent {
     display: flex;
 }
 
-.rotateArrow
-{
+.rotateArrow {
     transform: rotateX(-180deg);
     transition: transform 0.25s ease-in;
 }
 
-.kantara
-{
+.kantara {
     position: absolute;
     top: 0;
     left: 0;
     width: 100vw;
     /* height: 120%; */
-    z-index: -1;    
+    z-index: -1;
 }
 
-.mainStartVideo
-{
+.mainStartVideo {
     height: 56.25vw;
     width: 100%;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
 }
 
-.playMovie
-{
+.playMovie {
     position: absolute;
     /* top: 45%; */
     top: 21.75vw;
@@ -218,16 +197,14 @@ body{
     height: 56.25vw;
 }
 
-.movieTitle
-{
+.movieTitle {
     font-size: 5.75vw;
     /* font-size: 5.5rem; */
-    font-family: "Nunito",sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 700;
 }
 
-.movieDescription
-{
+.movieDescription {
     font-size: 1.2vw;
     /* font-size: 1.15rem; */
     width: 40%;
@@ -235,21 +212,21 @@ body{
     padding: 0.4vw 0 2.15vw 0;
 }
 
-.playBtn svg path,.infoBtn svg path,.playMovie button span
-{
-    color:black;
+.playBtn svg path,
+.infoBtn svg path,
+.playMovie button span {
+    color: black;
 }
 
-.playMovie .playBtn{
+.playMovie .playBtn {
     background-color: rgb(255, 255, 255);
-    outline:none;
-    border:none;
+    outline: none;
+    border: none;
 }
 
-.playMovie button
-{
+.playMovie button {
     background-color: rgba(168, 168, 168, 0.5);
-    border:none;
+    border: none;
     /* font-size: 1.15rem; */
     font-size: 1.2vw;
     /* border-radius: 10px; */
@@ -260,14 +237,12 @@ body{
     position: relative;
 }
 
-.playMovie button span
-{
+.playMovie button span {
     /* padding: 0 1rem; */
     padding: 0 1.1vw;
 }
 
-.flexBox
-{
+.flexBox {
     /* width: 12rem; */
     width: 12.5vw;
     /* height: 4rem; */
@@ -278,33 +253,30 @@ body{
     transition: width 0.4s ease-in-out;
 }
 
-.flexBox:hover
-{
+.flexBox:hover {
     /* width: 14rem; */
     width: 14.5vw;
     transition: width 0.4s ease-in-out;
 }
 
-.directionArrow{
+.directionArrow {
     display: none;
     position: absolute;
     /* right: 1rem; */
     right: 1.1vw;
 }
 
-.moviesSlider
-{
+.moviesSlider {
     position: relative;
 }
 
-.moviesSlider h3
-{
-    color:white;
+.moviesSlider h3 {
+    color: white;
     font-size: 2.25vw;
-    padding:1vw 0 0 1.5vw;
+    padding: 1vw 0 0 1.5vw;
 }
 
-.moviesCollection{
+.moviesCollection {
     display: flex;
     width: 200vw;
     padding: 1vw 1vw 2.5vw 1vw;
@@ -312,69 +284,61 @@ body{
     transition: transform 1s ease;
 }
 
-.moviesSlider img{
+.moviesSlider img {
     width: 20%;
     padding: 0 0.5vw;
     border-radius: 1.5vw;
 }
 
-.moviesSlider svg
-{
+.moviesSlider svg {
     position: absolute;
     top: 50%;
     cursor: pointer;
-    transform: translate(0,15%);
+    transform: translate(0, 15%);
 }
 
-.moviesSlider svg path
-{
-    color:black;
+.moviesSlider svg path {
+    color: black;
 }
 
-.rightArrowSlider
-{
+.rightArrowSlider {
     display: block;
     right: 0;
 }
 
-.leftArrowSlider
-{
+.leftArrowSlider {
     display: none;
     left: 1vw;
 }
 
-.VideoPlayer
-{
+.VideoPlayer {
     display: none;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%,-45%);
+    transform: translate(-50%, -45%);
     z-index: 4;
     position: fixed;
 }
 
-.VideoPlayer video
-{
+.VideoPlayer video {
     width: 70vw;
 }
 
-.Backarrow
-{
+.Backarrow {
     display: none;
     cursor: pointer;
     padding: 2.15vw;
 }
 
-.Backarrow svg path{
-    color:white;
+.Backarrow svg path {
+    color: white;
 }
 
-.Backarrow svg:hover{
+.Backarrow svg:hover {
     transform: translate(-5%);
 }
 
-.label
-{
+.label {
     font-size: 1.5vw;
 }
