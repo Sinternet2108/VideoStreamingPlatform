@@ -280,15 +280,24 @@ body {
 .moviesCollection {
     display: flex;
     width: 200vw;
-    padding: 1vw 1vw 2.5vw 1vw;
+    padding: 1vw 2.15vw 2.5vw 1.5vw;
     /* transform: translateX(-100vw); */
     transition: transform 1s ease;
 }
 
 .moviesSlider img {
     width: 20%;
-    padding: 0 0.5vw;
+    margin: 0 0.5vw;
     border-radius: 1.5vw;
+}
+
+.hoverMovies:hover
+{
+    transform: scale(1.15);
+    /* box-shadow: 2px 2px 10px rgb(157, 157, 157);
+    transition: box-shadow 0.6s ease; */
+    transition: transform 0.6s ease-in-out;
+    cursor: pointer;
 }
 
 .moviesSlider svg {

@@ -21,8 +21,9 @@ let headerContent = document.querySelector(".heading");
 let backArrowDiv = document.querySelector(".Backarrow");
 let backArrow = document.querySelector(".Backarrow svg");
 let backWritten = document.querySelector(".label");
-let videoElement = document.querySelector(".VideoPlayer video");
+let videoElement = document.querySelectorAll(".VideoPlayer video");
 let asideElement = document.querySelector(".videoWindow");
+let imageElement = document.querySelectorAll(".movieDivision img");
 
 searchElement.addEventListener("click", expandSearch);
 
@@ -63,23 +64,65 @@ for (let i = 0; i < movieSlider.length; i++) {
     })
 }
 
+// console.log(videoElement.length);
 trailerElement.addEventListener("click", () => {
+    videoElement[0].style.setProperty("display","block");
+    videoPlay();
+    videoElement[0].play();
+    for(let i=1;i<videoElement.length;i++)
+    {
+        videoElement[i].style.setProperty("display","none");
+        videoElement[i].pause();
+    }
+});
+
+function videoPlay()
+{
     videoPlayer.style.setProperty("display", "block");
     mainContent.style.setProperty("display", "none");
     headerContent.style.setProperty("display", "none");
     backArrowDiv.style.setProperty("display", "block");
     asideElement.style.setProperty("display","block");
     asideElement.style.setProperty("height","100vh");
-});
+}
 
-backArrow.addEventListener("click", backFunction);
+for (let i = 0; i < imageElement.length; i++) {
+    backArrow.addEventListener("click", () => {
+        backFunction();
+        if(videoElement[i].play())
+        {
+            videoElement[i].pause();
+        }
+    })
+}
 
 function backFunction() {
     videoPlayer.style.setProperty("display", "none");
     mainContent.style.setProperty("display", "block");
     headerContent.style.setProperty("display", "flex");
     backArrowDiv.style.setProperty("display", "none");
-    asideElement.style.setProperty("display","none");
-    videoElement.pause();
+    asideElement.style.setProperty("display", "none");
 }
 
+for (let i = 0; i < imageElement.length; i++) {
+    imageElement[i].addEventListener("mouseover", () => {
+        imageElement[i].classList.add("hoverMovies");        
+    })
+}
+
+// console.log(imageElement.length);
+for (let i = 0; i < imageElement.length; i++) {
+    imageElement[i].addEventListener("click", () => {
+        for(let j=0;j<videoElement.length;j++)
+        {
+            if(j-1!=i)
+            {   //videoElement[0].style.setProperty("display","none");
+                videoElement[j].style.setProperty("display","none");
+                videoElement[j].pause();
+            }
+        }
+        videoPlay();
+        videoElement[i+1].style.setProperty("display","block");
+        videoElement[i+1].play();
+    })
+}
