@@ -301,8 +301,7 @@ body {
     border-radius: 1.5vw;
 }
 
-.hoverMovies:hover
-{
+.hoverMovies:hover {
     transform: scale(1.15);
     /* box-shadow: 2px 2px 10px rgb(157, 157, 157);
     transition: box-shadow 0.6s ease; */
@@ -363,51 +362,170 @@ body {
     font-size: 1.5vw;
 }
 
-.videoWindow
-{
+.videoWindow {
     display: none;
 }
 
-@media (max-width: 1000px)
-{
+@media (max-width: 1000px) {
     .color {
         font-size: 3rem;
     }
+
     .logo a {
         font-size: 3rem;
         padding: 0 2.5rem;
     }
-    .heading
-    {
+
+    .heading {
         height: 8rem;
     }
-    .navItems a
-    {
+
+    .navItems a {
         font-size: 1.5rem;
     }
-    .searchIcon svg,.profileIcon svg
-    {
-        height:2.25em;
+
+    .searchIcon svg,
+    .profileIcon svg {
+        height: 2.25em;
         width: 2.5em;
     }
-    .kantara
-    {
+
+    .kantara {
         top: 8rem;
     }
-    .mainStartVideo
-    {
+
+    .mainStartVideo {
         margin-top: 8rem;
     }
-    .playMovie
-    {
-        top:40%;
+
+    .playMovie {
+        top: 31vw;
     }
-    .profileContent
-    {
+
+    .profileContent {
         top: 8rem;
     }
+
     .profileContent li a {
         font-size: 1.15vw;
-        padding:1rem;
+        padding: 1rem;
+    }
+
+    .movieDescription {
+        font-size: 1.5rem;
+    }
+
+    .flexBox {
+        width: 13rem;
+    }
+
+    .flexBox:hover {
+        width: 14rem;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .flexBox span {
+        font-size: 1.15rem;
+    }
+
+    .searchInput {
+        height: 2.4rem;
+        padding: 0.15rem 0 0 2.4rem;
+    }
+
+    .svgIcon {
+        top: 0.65rem;
+        left: 0.5rem;
+    }
+
+    .moviesSlider img {
+        width: 33%;
+    }
+
+    .moviesCollection
+    {
+        width:330vw;
+    }
+
+    .rightArrowSlider
+    {
+        right: 1rem;
+    }
+}
+
+@media (max-width: 500px) 
+{
+    .color {
+        font-size: 5rem;
+    }
+
+    .logo a {
+        font-size: 5rem;
+        padding: 0 3rem;
+    }
+
+    .heading {
+        height: 15rem;
+    }
+
+    .navItems a {
+        font-size: 1.5rem;
+    }
+
+    .kantara {
+        top: 15rem;
+    }
+
+    .mainStartVideo {
+        margin-top: 15rem;
+    }
+
+    .playMovie {
+        top: 40vw;
+    }
+
+    .profileContent {
+        top: 8rem;
+    }
+
+    .profileContent li a {
+        font-size: 1.15vw;
+        padding: 1rem;
+    }
+
+    .movieDescription {
+        font-size: 1.5rem;
+    }
+
+    .flexBox {
+        width: 13rem;
+    }
+
+    .flexBox:hover {
+        width: 14rem;
+        transition: width 0.4s ease-in-out;
+    }
+
+    .flexBox span {
+        font-size: 1.15rem;
+    }
+
+    .searchInput {
+        height: 2.4rem;
+        padding: 0.15rem 0 0 2.4rem;
+    }
+
+    .svgIcon {
+        top: 0.65rem;
+        left: 0.5rem;
+    }
+
+    .moviesSlider img {
+        width: 40%;
+    }
+
+    .moviesCollection
+    {
+        width:500vw;
     }
 }
