@@ -367,3 +367,47 @@ body {
 {
     display: none;
 }
+
+@media (max-width: 1000px)
+{
+    .color {
+        font-size: 3rem;
+    }
+    .logo a {
+        font-size: 3rem;
+        padding: 0 2.5rem;
+    }
+    .heading
+    {
+        height: 8rem;
+    }
+    .navItems a
+    {
+        font-size: 1.5rem;
+    }
+    .searchIcon svg,.profileIcon svg
+    {
+        height:2.25em;
+        width: 2.5em;
+    }
+    .kantara
+    {
+        top: 8rem;
+    }
+    .mainStartVideo
+    {
+        margin-top: 8rem;
+    }
+    .playMovie
+    {
+        top:40%;
+    }
+    .profileContent
+    {
+        top: 8rem;
+    }
+    .profileContent li a {
+        font-size: 1.15vw;
+        padding:1rem;
+    }
+}
