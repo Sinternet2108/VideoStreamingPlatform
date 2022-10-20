@@ -439,7 +439,7 @@ body {
     }
 
     .moviesSlider img {
-        width: 33%;
+        width: 33.333%;
     }
 
     .moviesCollection
@@ -453,7 +453,7 @@ body {
     }
 }
 
-@media (max-width: 500px) 
+@media (max-width: 600px) 
 {
     .color {
         font-size: 5rem;

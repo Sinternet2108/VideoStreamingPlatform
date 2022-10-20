@@ -24,6 +24,7 @@ let backWritten = document.querySelector(".label");
 let videoElement = document.querySelectorAll(".VideoPlayer video");
 let asideElement = document.querySelector(".videoWindow");
 let imageElement = document.querySelectorAll(".movieDivision img");
+let clickCount=0;
 
 searchElement.addEventListener("click", expandSearch);
 
@@ -50,7 +51,17 @@ for (let i = 0; i < buttonElement.length; i++) {
     })
 }
 
-for (let i = 0; i < movieSlider.length; i++) {
+if(window.innerWidth>1000)
+{
+    translateWidth();
+}
+else if(window.innerWidth<=1000 && window.innerWidth>600)
+{
+    translateWidthTab();
+}
+function translateWidth()
+{
+    for (let i = 0; i < movieSlider.length; i++) {
     arrowRightSlider[i].addEventListener("click", () => {
         movieSlider[i].style.setProperty("transform", "translateX(-100vw)");
         arrowRightSlider[i].style.setProperty("display", "none");
@@ -63,9 +74,28 @@ for (let i = 0; i < movieSlider.length; i++) {
         arrowRightSlider[i].style.setProperty("display", "block");
     })
 }
+}
+
+function translateWidthTab()
+{
+    for (let i = 0; i < movieSlider.length; i++) {
+    arrowRightSlider[i].addEventListener("click", () => {
+        movieSlider[i].style.setProperty("transform", "translateX(-97.75vw)");
+        arrowRightSlider[i].style.setProperty("display", "none");
+        arrowLeftSlider[i].style.setProperty("display", "block");
+    })
+
+    arrowLeftSlider[i].addEventListener("click", () => {
+        movieSlider[i].style.setProperty("transform", "translateX(0vw)");
+        arrowLeftSlider[i].style.setProperty("display", "none");
+        arrowRightSlider[i].style.setProperty("display", "block");
+    })
+}
+}
 
 // console.log(videoElement.length);
 trailerElement.addEventListener("click", () => {
+    profileDiv.classList.remove("showContent");
     videoElement[0].style.setProperty("display","block");
     videoPlay();
     videoElement[0].play();
@@ -88,6 +118,8 @@ function videoPlay()
 
 for (let i = 0; i < imageElement.length; i++) {
     backArrow.addEventListener("click", () => {
+        arrowIconElement.classList.remove("rotateArrow");
+        profileDiv.classList.toggle("showContent");
         backFunction();
         if(videoElement[i].play())
         {
@@ -113,6 +145,7 @@ for (let i = 0; i < imageElement.length; i++) {
 // console.log(imageElement.length);
 for (let i = 0; i < imageElement.length; i++) {
     imageElement[i].addEventListener("click", () => {
+        profileDiv.classList.remove("showContent");
         for(let j=0;j<videoElement.length;j++)
         {
             if(j-1!=i)
