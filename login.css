@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+body{
+    background:linear-gradient(to bottom right,#000000,#1A1A1A);
+}
+.creds ,.login{
+    width: 25rem;
+    margin: 0.9rem;
+    padding: 0.8rem;
+    font-family: 'Quicksand', sans-serif;
+    background-color:rgba(161, 158, 158,0.3);
+    border: none;
+    outline: none;
+    border-radius: 0.2rem;
+   
+}
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+a{
+    text-decoration: none; 
+    color: black;
+}
+h1,h2{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    padding: 1rem;
+}
+span{
+    font-family: 'Josefin Slab', serif;
+    color: yellow;
+}
+.signup {
+    color: white;
+    padding: 1rem;
+    font-family: 'Quicksand', sans-serif;
+  
+}
+a{
+    font-style:1rem;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.creds::placeholder
+{
+    color: rgb(255, 252, 252);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1rem;
+}
+.remem
+{
+    margin-right:17.3rem;
+}
+
+.remem label
+{
+    color: white;
+    font-size: 0.95rem;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.remem input{
+    margin:0.5rem;
+}
+.googlejoin button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(252, 252, 252);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 0.9rem;
+}
+svg{
+    margin: 0 0.5rem;
+}
