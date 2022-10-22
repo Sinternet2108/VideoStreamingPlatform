@@ -1,6 +1,6 @@
-window.onbeforeunload = function () {
-    return "Are You Sure? You will lead to Home Page...";
-}
+// window.onbeforeunload = function () {
+//     return "Are You Sure? You will lead to Home Page...";
+// }
 
 let searchElement = document.querySelector(".searchIcon svg");
 let searchInputElement = document.querySelector(".searchBox");
@@ -24,7 +24,15 @@ let backWritten = document.querySelector(".label");
 let videoElement = document.querySelectorAll(".VideoPlayer video");
 let asideElement = document.querySelector(".videoWindow");
 let imageElement = document.querySelectorAll(".movieDivision img");
-let clickCount = 0;
+let langElement = document.querySelector(".lang");
+let langDropMenu = document.querySelector(".langContent");
+let arrowLangIconElement = document.querySelector(".arrowLangIcon");
+let divRight = document.querySelectorAll(".bgarrow");
+let divLeft = document.querySelectorAll(".bglarrow");
+let hamburgerElement = document.querySelector(".hamburger");
+let hamburgerDiv = document.querySelector(".hamburgerContent");
+let hamburgerSecond = document.querySelector(".secondLine");
+let hamburgerThird= document.querySelector(".thirdLine");
 
 searchElement.addEventListener("click", expandSearch);
 
@@ -41,6 +49,11 @@ function addContent() {
     profileDiv.classList.toggle("showContent");
 }
 
+langElement.addEventListener("click",()=>{
+    langDropMenu.classList.toggle("showLangContent");
+    arrowLangIconElement.classList.toggle("arrowLangRotateIcon");
+});
+
 for (let i = 0; i < buttonElement.length; i++) {
     buttonElement[i].addEventListener("mouseover", () => {
         arrowElement[i].style.setProperty("display", "block")
@@ -54,21 +67,27 @@ for (let i = 0; i < buttonElement.length; i++) {
 if (window.innerWidth > 1000) {
     translateWidth();
 }
+
 else if (window.innerWidth <= 1000 && window.innerWidth > 600) {
     translateWidthTab();
 }
+
 function translateWidth() {
     for (let i = 0; i < movieSlider.length; i++) {
         arrowRightSlider[i].addEventListener("click", () => {
             movieSlider[i].style.setProperty("transform", "translateX(-100vw)");
             arrowRightSlider[i].style.setProperty("display", "none");
             arrowLeftSlider[i].style.setProperty("display", "block");
+            divRight[i].style.setProperty("display","none");
+            divLeft[i].style.setProperty("display","block");
         })
 
         arrowLeftSlider[i].addEventListener("click", () => {
             movieSlider[i].style.setProperty("transform", "translateX(0vw)");
             arrowLeftSlider[i].style.setProperty("display", "none");
             arrowRightSlider[i].style.setProperty("display", "block");
+            divRight[i].style.setProperty("display","block");
+            divLeft[i].style.setProperty("display","none");
         })
     }
 }
@@ -76,15 +95,19 @@ function translateWidth() {
 function translateWidthTab() {
     for (let i = 0; i < movieSlider.length; i++) {
         arrowRightSlider[i].addEventListener("click", () => {
-            movieSlider[i].style.setProperty("transform", "translateX(-97.75vw)");
+            movieSlider[i].style.setProperty("transform", "translateX(-97.5vw)");
             arrowRightSlider[i].style.setProperty("display", "none");
             arrowLeftSlider[i].style.setProperty("display", "block");
+            divRight[i].style.setProperty("display","none");
+            divLeft[i].style.setProperty("display","block");
         })
 
         arrowLeftSlider[i].addEventListener("click", () => {
             movieSlider[i].style.setProperty("transform", "translateX(0vw)");
             arrowLeftSlider[i].style.setProperty("display", "none");
             arrowRightSlider[i].style.setProperty("display", "block");
+            divRight[i].style.setProperty("display","block");
+            divLeft[i].style.setProperty("display","none");
         })
     }
 }
@@ -150,3 +173,10 @@ for (let i = 0; i < imageElement.length; i++) {
         videoElement[i + 1].play();
     })
 }
+
+hamburgerElement.addEventListener("click",()=>{
+    hamburgerDiv.classList.toggle("hamburgerFlex");
+    hamburgerSecond.classList.toggle("secondLineTransition");
+    hamburgerThird.classList.toggle("thirdLineTransition");
+})
+
