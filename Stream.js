@@ -1,6 +1,6 @@
-// window.onbeforeunload = function () {
-//     return "Are You Sure? You will lead to Home Page...";
-// }
+window.onbeforeunload = function () {
+    return "Are You Sure? You will lead to Home Page...";
+}
 
 let searchElement = document.querySelector(".searchIcon svg");
 let searchInputElement = document.querySelector(".searchBox");
