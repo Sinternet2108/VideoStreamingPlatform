@@ -1,64 +1,73 @@
-*{
+* {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
     overflow: hidden;
 }
-body{
+
+body {
     width: 100vw;
     height: 100vh;
     /* background-color: rgb(13, 13, 13);  */
-    background-image: linear-gradient(to bottom right,#000000,#1A1A1A);
+    background-image: linear-gradient(to bottom right, #000000, #1A1A1A);
 }
-h2{
+
+h2 {
     display: inline-block;
     font-family: 'Quicksand', sans-serif;
     font-size: 1rem;
     color: white;
-   
+
 }
-.page{
+
+.page {
     display: flex;
-   
+
 }
-.image img{
+
+.image img {
     width: 40vw;
-   
+
 }
-.content{
+
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
     width: 60vw;
-    
 
-   
+
+
 }
-.details{
+
+.details {
     display: flex;
     flex-direction: column;
 
 }
-.creds{
+
+.creds {
     padding: 0.85rem;
     width: 25rem;
     margin: 1.2rem;
-    background-color:rgba(161, 158, 158,0.3);
+    background-color: rgba(161, 158, 158, 0.3);
     border: none;
     outline: none;
     border-radius: 0.2rem;
 }
-.creds::placeholder
-{
+
+.creds::placeholder {
     color: rgb(255, 252, 252);
     font-family: 'Quicksand', sans-serif;
 }
-.google{
+
+.google {
     outline: auto;
 }
-.googlejoin button{
+
+.googlejoin button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,42 +76,47 @@ h2{
     border: none;
     cursor: pointer;
 }
-#login{
+
+#login {
     width: 25rem;
     margin: 1.2rem;
     padding: 0.9rem;
-    background-color:yellow;
+    background-color: yellow;
     color: black;
     outline: none;
     border: none;
     cursor: pointer;
-   
+
 }
-h1{
+
+h1 {
     /* margin-left: 3.2rem; */
     text-align: center;
     font-family: 'Quicksand', sans-serif;
     color: white;
     padding: 0.35rem;
-    
+
 }
-span{
+
+span {
     font-family: 'Josefin Slab', serif;
 }
-.namesDiv{
+
+.namesDiv {
     display: flex;
     justify-content: space-between;
 }
 
-.names
-{
-    width:11.25rem;
+.names {
+    width: 11.25rem;
 }
-a{
+
+a {
     text-decoration: none;
     color: yellow;
 }
-P{
+
+P {
     color: yellow;
     position: absolute;
     z-index: 1;
@@ -110,12 +124,12 @@ P{
     font-size: 3.5rem;
     margin-left: 2rem;
 }
-svg{
+
+svg {
     margin: 0 0.5rem;
 }
-#login a{
+
+#login a {
     text-decoration: none;
     color: black;
 }
-
-

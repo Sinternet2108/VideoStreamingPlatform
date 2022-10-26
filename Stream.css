@@ -30,7 +30,8 @@ body {
     background-repeat: no-repeat;
 }
 
-.color,.colorFooter {
+.color,
+.colorFooter {
     font-size: 2.15vw;
 }
 
@@ -51,7 +52,8 @@ body {
     height: 5.25vw;
 }
 
-.logo a, .logoFooter a{
+.logo a,
+.logoFooter a {
     /* font-size: 2rem; */
     font-size: 2.15vw;
     /* padding: 0 2rem; */
@@ -85,7 +87,8 @@ body {
     padding: 0.45vw 1.1vw 0 0;
 }
 
-.arrowIcon,.arrowLangIcon{
+.arrowIcon,
+.arrowLangIcon {
     /* width: 16px; */
     width: 1.1vw;
     height: auto;
@@ -142,12 +145,14 @@ body {
     color: black;
 }
 
-.profileContent, .langContent, .hamburgerContent{
+.profileContent,
+.langContent,
+.hamburgerContent {
     position: absolute;
     width: 15%;
     /* height:40vh; */
     height: 19vw;
-    background-color: rgba(132, 127, 127,0.95);
+    background-color: rgba(132, 127, 127, 0.95);
     /* border-radius: 16px; */
     border-radius: 1.1vw;
     display: flex;
@@ -162,44 +167,47 @@ body {
     z-index: 3;
 }
 
-.profileContent ul,.langContent ul, .hamburgerContent ul{
+.profileContent ul,
+.langContent ul,
+.hamburgerContent ul {
     list-style: none;
 }
 
-.profileContent li, .langContent li ,.hamburgerContent li{
+.profileContent li,
+.langContent li,
+.hamburgerContent li {
     /* padding:1rem 0; */
     padding: 1.1vw 0;
 }
 
-.profileContent li a, .langContent li a, .hamburgerContent li a{
+.profileContent li a,
+.langContent li a,
+.hamburgerContent li a {
     text-decoration: none;
     color: rgb(255, 255, 255);
 }
 
-.hamburgerContent
-{
-    height:40vw;
+.hamburgerContent {
+    height: 40vw;
     top: 8rem;
     width: 30%;
     display: none;
 }
 
-.hamburgerContent li a{
+.hamburgerContent li a {
     color: rgba(0, 0, 0, 0.9);
     font-size: 2rem;
 }
 
-.hamburgerContent li{
+.hamburgerContent li {
     padding: 1.25vw 0;
 }
 
-.lang
-{
+.lang {
     cursor: pointer;
 }
 
-.langContent
-{
+.langContent {
     left: 33.35vw;
     top: 5.2vw;
     display: none;
@@ -211,8 +219,7 @@ body {
     display: flex;
 }
 
-.showLangContent
-{
+.showLangContent {
     display: flex;
 }
 
@@ -221,22 +228,19 @@ body {
     transition: transform 0.25s ease-in;
 }
 
-.arrowLangIcon
-{
+.arrowLangIcon {
     width: 0.9vw;
     padding: 0 0 0 0.1vw;
 }
 
-.arrowLangRotateIcon
-{
+.arrowLangRotateIcon {
     transform: rotateX(-180deg);
     transition: transform 0.25s ease-in;
     width: 0.9vw;
     padding: 0 0 0 0.1vw;
 }
 
-.hamburger
-{
+.hamburger {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -244,8 +248,9 @@ body {
     display: none;
 }
 
-.firstLine,.secondLine,.thirdLine
-{
+.firstLine,
+.secondLine,
+.thirdLine {
     width: 25px;
     height: 2px;
     background-color: rgb(255, 255, 255);
@@ -354,6 +359,18 @@ body {
     padding: 1vw 0 0 2vw;
 }
 
+.movieExplore {
+    display: flex;
+    align-items: center;
+}
+
+.movieExplore a {
+    padding: 1.4vw 0 0 1vw;
+    text-decoration: none;
+    color: yellow;
+    display: none;
+}
+
 .moviesCollection {
     display: flex;
     width: 200vw;
@@ -376,15 +393,15 @@ body {
     cursor: pointer;
 }
 
-.moviesSlider svg{
+.moviesSlider svg {
     position: absolute;
     top: 50%;
     cursor: pointer;
     transform: translate(0, 15%);
 }
 
-.bgarrow,.bglarrow
-{
+.bgarrow,
+.bglarrow {
     width: 3.85vw;
     height: 3.85vw;
     border-radius: 50%;
@@ -395,8 +412,7 @@ body {
     cursor: pointer;
 }
 
-.bglarrow
-{
+.bglarrow {
     left: 0.5%;
     top: 48.5%;
     display: none;
@@ -450,8 +466,7 @@ body {
     display: none;
 }
 
-.footer
-{
+.footer {
     width: 100vw;
     height: 7.5rem;
     background-image: linear-gradient(to bottom right, #000000, #1A1A1A);
@@ -489,12 +504,12 @@ body {
         top: 31vw;
     }
 
-    .profileContent,.langContent {
+    .profileContent,
+    .langContent {
         top: 8rem;
     }
 
-    .langContent
-    {
+    .langContent {
         left: 38.5rem;
     }
 
@@ -530,6 +545,10 @@ body {
         left: 0.5rem;
     }
 
+    .movieExplore a {
+        display: block;
+    }
+
     .moviesSlider img {
         width: 33.333%;
     }
@@ -539,29 +558,28 @@ body {
     }
 
     .rightArrowSlider {
-    
+
         display: block;
         right: 1.75vw;
     }
-    
+
     .leftArrowSlider {
         display: none;
         left: 1.25vw;
     }
 }
 
-@media (min-width: 1000px)
-{
-    .moviesSlider svg{
+@media (min-width: 1000px) {
+    .moviesSlider svg {
         top: 51.25%;
     }
 
     .rightArrowSlider {
-    
+
         display: block;
         right: 1.75vw;
     }
-    
+
     .leftArrowSlider {
         display: none;
         left: 1.25vw;
@@ -575,17 +593,20 @@ body {
         background-color: rgba(0, 0, 0, 0.875);
     }
 
-    .logo,.logoFooter
-    {
+    .logo,
+    .logoFooter {
         margin-left: 2rem;
     }
 
-    .logo span,.logo a,.logoFooter span,.logoFooter a
-    {
+    .logo span,
+    .logo a,
+    .logoFooter span,
+    .logoFooter a {
         font-size: 3.4rem;
     }
 
-    .navItems a ,.heading img{
+    .navItems a,
+    .heading img {
         display: none;
     }
 
@@ -606,16 +627,14 @@ body {
         top: 31vw;
     }
 
-    .hamburger
-    {
+    .hamburger {
         height: 3.5rem;
         width: 5rem;
         display: flex;
         margin-right: 4rem;
     }
-    
-    .hamburger span
-    {
+
+    .hamburger span {
         height: 2.5px;
         display: inline-block;
     }
@@ -625,19 +644,16 @@ body {
         top: 8rem;
     }
 
-    .hamburgerFlex
-    {
+    .hamburgerFlex {
         display: flex;
     }
 
-    .secondLineTransition
-    {
+    .secondLineTransition {
         width: 12.5px;
         transition: width 0.6s ease;
     }
 
-    .thirdLineTransition
-    {
+    .thirdLineTransition {
         width: 6.25px;
         transition: width 0.6s ease;
     }
@@ -652,13 +668,13 @@ body {
         font-size: 1.5rem;
     }
 
-    .searchBox,.searchIcon,.searchInput
-    {
+    .searchBox,
+    .searchIcon,
+    .searchInput {
         display: none;
     }
 
-    .moviesSlider h3
-    {
+    .moviesSlider h3 {
         font-size: 2.5vw;
     }
 
@@ -692,12 +708,23 @@ body {
     .moviesCollection {
         width: 500vw;
     }
+    
+    .footer .logoFooter 
+    {
+        margin: 0;
+    } 
+
+    .footer .copyRight
+    {
+        font-size: 1.5rem;
+    }
 }
 
-@media (max-width:400px)
-{
-    .firstLine,.secondLine,.thirdLine
-    {
+@media (max-width:400px) {
+
+    .firstLine,
+    .secondLine,
+    .thirdLine {
         height: 1.5px;
     }
 }

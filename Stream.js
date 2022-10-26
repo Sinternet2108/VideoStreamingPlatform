@@ -33,6 +33,7 @@ let hamburgerElement = document.querySelector(".hamburger");
 let hamburgerDiv = document.querySelector(".hamburgerContent");
 let hamburgerSecond = document.querySelector(".secondLine");
 let hamburgerThird= document.querySelector(".thirdLine");
+let footerElement= document.querySelector("#footer");
 
 searchElement.addEventListener("click", expandSearch);
 
@@ -114,6 +115,7 @@ function translateWidthTab() {
 
 // console.log(videoElement.length);
 trailerElement.addEventListener("click", () => {
+    footerElement.style.setProperty("display","none");
     profileDiv.classList.remove("showContent");
     videoElement[0].style.setProperty("display", "block");
     videoPlay();
