@@ -598,6 +598,11 @@ body {
         margin-left: 2rem;
     }
 
+    .footer
+    {
+        display: none;
+    }
+
     .logo span,
     .logo a,
     .logoFooter span,

@@ -37,7 +37,7 @@ let footerElement= document.querySelector("#footer");
 
 searchElement.addEventListener("click", expandSearch);
 
-function expandSearch() {
+function expandSearch() {   
     searchElement.remove();
     searchInputElement.style.setProperty("display", "block");
 }
@@ -135,7 +135,7 @@ function videoPlay() {
     asideElement.style.setProperty("height", "100vh");
 }
 
-for (let i = 0; i < imageElement.length; i++) {
+for (let i = 0; i < videoElement.length; i++) {
     backArrow.addEventListener("click", () => {
         arrowIconElement.classList.remove("rotateArrow");
         profileDiv.classList.toggle("showContent");
